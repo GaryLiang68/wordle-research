@@ -1,0 +1,4 @@
+entry_id,author,wordle_guesses,num_guesses,wordle_answer,wordle_title,wordle_id,hard_mode,optimal
+82921,u/WaveParticle1729,"['arise', 'chant', 'whine']",3,whine,unknown,unknown,False,"[[(ARISE, 23), (CLOTH, 1)], [(CHANT, 1), (WHINE, 0)]]"
+82922,u/soap_lady,"['crane', 'array', 'breed', 'dirge', 'abode', 'adobe']",6,adobe,unknown,unknown,False,"[[(CRANE, 49), (SAULT, 5)], [(ARRAY, 15), (BUILD, 2)], [(BREED, 3), (ABIDE, 1)], [(DIRGE, 2), (ABODE, 1)], [(ABODE, 1), (ADOBE, 0)]]"
+82923,u/sladog6,"['train', 'louse', 'spike', 'fable', 'above', 'adobe']",6,adobe,unknown,unknown,False,"[[(TRAIN, 147), (SOLDE, 1)], [(LOUSE, 4), (ABODE, 1)], [(SPIKE, 3), (ABODE, 1)], [(FABLE, 3), (ABODE, 1)], [(ABOVE, 1), (ADOBE, 0)]]"

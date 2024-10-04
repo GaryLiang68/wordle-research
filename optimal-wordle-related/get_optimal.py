@@ -1,6 +1,7 @@
 from doddle.cli import run, my_run
 from doddle.words import Word
 from doddle.enums import SolverType
+from tqdm import tqdm
 import pandas as pd
 import sys
 
@@ -15,7 +16,7 @@ def get_optimal(file):
     # initialize a new data column called optimal
     data['optimal'] = None
 
-    for index, row in data.iterrows():
+    for index, row in tqdm(data.iterrows(), total=len(data)):
         # pair_wise_optimal = []
         # for i in range(len(wordle_guesses) - 1):
         #     optimal_guess = my_run(Word(wordle_answer), wordle_guesses[:i+1], solver_type=solver)
@@ -38,7 +39,7 @@ def get_optimal(file):
 # make it so that when the file is ran, the get_optimal function is called
 if __name__ == "__main__":
     file = sys.argv[1]
-    output = file.replace('.csv', '') + '_output.csv'
+    output = file.replace('.csv', '') + '__output.csv'
     try:
         new_data = get_optimal(file)
         new_data.to_csv(output, index=False)
